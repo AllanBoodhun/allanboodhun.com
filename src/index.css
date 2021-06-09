@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.banner {
+  background-color:#2B507F;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}

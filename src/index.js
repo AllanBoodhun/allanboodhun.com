@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Primary from './components/primary/primary.components';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className ='banner'>
+      <Primary />
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

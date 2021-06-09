@@ -1,0 +1,13 @@
+
+.primary {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+}
