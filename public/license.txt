@@ -1,0 +1,11 @@
+Model Information:
+* title:	OLIVETTI Computer
+* source:	https://sketchfab.com/3d-models/olivetti-computer-a64f2d86a1b447ed9e6888c53d84bfb7
+* author:	Rust Shake (https://sketchfab.com/600v)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "OLIVETTI Computer" (https://sketchfab.com/3d-models/olivetti-computer-a64f2d86a1b447ed9e6888c53d84bfb7) by Rust Shake (https://sketchfab.com/600v) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

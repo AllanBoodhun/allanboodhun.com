@@ -9,7 +9,7 @@ const Primary = () => {
   return (
     <div className="primary">
       <div className="title">
-        <h1>Graphiste - Développeur web</h1>
+        <h1>Allan Boodhun</h1>
       </div>
      <Navbar />
     </div>

@@ -1,19 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Html } from "drei";
+import React, { useState, useRef} from "react";
+import Scene from './components/scene/scene.home'
 
 
-function App() {
+export default function App() {
   return (
-      <Canvas colorManagement camera={{ position: [0, 0, 120], fov: 70 }}>
-        <Html fullscreen>
-          <div className='container'>
-            <h1 className='title'>Hello</h1>
-          </div>
-        </Html>
-      </Canvas>
+    <div className="App">
+      <div className="Banner">
+        <h2>GRAPHISTE - DÉVELOPPEUR WEB</h2>
+        <Scene />
+
+      </div>
+
+    </div>
   );
 }
 
-export default App;
+
