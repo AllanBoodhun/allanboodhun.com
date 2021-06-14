@@ -7,7 +7,12 @@ export default function App() {
   return (
     <div className="App">
       <div className="Banner">
-        <h2>GRAPHISTE - DÉVELOPPEUR WEB</h2>
+        <div>
+        <h2>GRAPHISTE <br />
+         DÉVELOPPEUR WEB</h2> <br />
+        <button>En savoir plus</button>
+        </div>
+         
         <Scene />
 
       </div>

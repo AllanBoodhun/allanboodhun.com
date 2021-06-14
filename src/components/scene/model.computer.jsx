@@ -6,8 +6,8 @@ const Computer = () => {
   const gltf = useLoader(GLTFLoader, "./scene.gltf");
   return (
     <>
-      <mesh rotation={[0, -19.5, 0]}>
-        <primitive object={gltf.scene} scale={4} />
+      <mesh rotation={[0, -19.5, 0]} position={[ 0, -20, 0]}>
+        <primitive object={gltf.scene} scale={5.5} />
       </mesh>
     </>
   );
