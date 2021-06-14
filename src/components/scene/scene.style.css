@@ -2,6 +2,27 @@
   font-family: sans-serif;
   text-align: center;
   /* border: solid 1px gray; */
-  height: 70vh;
-  width: 40vw;
+  height: 80vh;
+  width: 100%;
+}
+
+
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4em;
+}
+
+.overlay h2{
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.287);
 }
