@@ -32,12 +32,12 @@ export default function Scene() {
             </Rig>
             <ContactShadows
               rotation-x={Math.PI / 2}
-              position={[0, -33, 0]}
-              opacity={0.25}
+              position={[9, -29, 0]}
+              opacity={0.2}
               width={100}
               height={100}
               blur={3}
-              far={60}
+              far={20}
             />
           </group>
         </Suspense>

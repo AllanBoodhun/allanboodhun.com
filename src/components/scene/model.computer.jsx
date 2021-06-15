@@ -9,6 +9,7 @@ const Computer = () => {
   const cam = useLoader(GLTFLoader, "./camera.gltf");
   const cloud = useLoader(GLTFLoader, "./cloud.gltf");
   const plant = useLoader(GLTFLoader, "./plant.gltf");
+  const keyboard = useLoader(GLTFLoader, "./keyboard.gltf");
   return (
     <>
       <group>
@@ -36,6 +37,11 @@ const Computer = () => {
         <mesh position={[-10, -32, 25]}
           rotation={[0.5, 0.1, 0]}>
           <primitive object={plant.scene} scale={2.5} />
+        </mesh>
+
+        <mesh position={[10, -33, -10]}
+          rotation={[0.5, 0.1, 0]}>
+          <primitive object={keyboard.scene} scale={150} />
         </mesh>
 
       </group>

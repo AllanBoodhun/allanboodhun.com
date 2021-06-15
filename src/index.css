@@ -1,0 +1,6 @@
+ body {
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: rgb(245, 242, 251);
+}
