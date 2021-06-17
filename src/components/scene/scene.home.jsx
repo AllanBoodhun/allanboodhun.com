@@ -13,8 +13,8 @@ import Computer from './model.computer';
 function Rig({ children }) {
   const ref = useRef()
   useFrame((state) => {
-    ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, (state.mouse.x * Math.PI) / 70, 0.01)
-    ref.current.rotation.x = THREE.MathUtils.lerp(ref.current.rotation.x, (state.mouse.y * Math.PI) / 70, 0.01)
+    ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, (state.mouse.x * Math.PI) / 70, 0.1)
+    ref.current.rotation.x = THREE.MathUtils.lerp(ref.current.rotation.x, (state.mouse.y * Math.PI) / 70, 0.1)
   })
   return <group ref={ref}>{children}</group>
 }
@@ -47,7 +47,7 @@ export default function Scene() {
         <h2 className="title" >
           <span>Développeur</span> 
           <br />
-          Front<span>End</span>
+          <span>Graphiste</span>
         </h2>
       </div>
     </div>

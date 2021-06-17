@@ -1,17 +1,44 @@
 import './App.css';
-import React, { useState, useRef } from "react";
+import React, { Component } from "react";
 import Scene from './components/scene/scene.home'
 import web_design from '../src/web_design.png';
 import dev from '../src/dev.png';
 import print from '../src/print.png';
 import WordCloud from './components/wordcloud/wordcloud.component'
+import CardList from './components/card-list/card-list.component';
+import WORKS from './components/portfolio/works';
 
 
 
 
-export default function App() {
+
+class App extends Component  {
+
+  constructor() {
+    super();
+
+    this.state = {
+      works: WORKS,
+      searchField: ''
+    };
+  }
+
+  // componentDidMount() {
+  //   this.setState({ works:  });
+  //   // this.setState remplace le contenu de this.state
+  // }
+  render(){
+    const works = this.state.works;
+
+
+    // const filteredWorks = works.filter(work =>
+    //   work.tags.includes(input.value)
+    // )
+
   return (
     <div className="App">
+
+      
       <Scene />
 
       <div className="specifications">
@@ -40,6 +67,12 @@ export default function App() {
         <div className="category-title">
           <h2>Porfolio</h2>
         </div>
+        <div className="input-container">
+         
+        </div>
+        <div className="container">
+          <CardList works={works} />
+        </div>
 
       </div>
 
@@ -52,5 +85,6 @@ export default function App() {
     </div>
   );
 }
+}
 
-
+export default App;

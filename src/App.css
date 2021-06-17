@@ -73,3 +73,8 @@ button :hover{
 .cloud{
 margin: 80px 200px 0px 200px;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
