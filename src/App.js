@@ -7,6 +7,7 @@ import print from '../src/print.png';
 import WordCloud from './components/wordcloud/wordcloud.component'
 import CardList from './components/card-list/card-list.component';
 import WORKS from './components/portfolio/works';
+import Search from './components/checkbox/checkbox.component';
 
 
 
@@ -18,8 +19,8 @@ class App extends Component  {
     super();
 
     this.state = {
-      works: WORKS,
-      searchField: ''
+      works: WORKS, 
+      checked: false,
     };
   }
 
@@ -29,11 +30,7 @@ class App extends Component  {
   // }
   render(){
     const works = this.state.works;
-
-
-    // const filteredWorks = works.filter(work =>
-    //   work.tags.includes(input.value)
-    // )
+  
 
   return (
     <div className="App">
@@ -41,7 +38,7 @@ class App extends Component  {
       
       <Scene />
 
-      <div className="specifications">
+      <div className="specifications" id="about">
         <div className="card">
           <img className="image" src={web_design} alt="web design" />
           <h3>Web Design</h3>
@@ -63,12 +60,12 @@ class App extends Component  {
         <WordCloud />
       </div>
 
-      <div className="porfolio">
+      <div className="porfolio" id="portfolio">
         <div className="category-title">
           <h2>Porfolio</h2>
         </div>
         <div className="input-container">
-         
+      
         </div>
         <div className="container">
           <CardList works={works} />
@@ -76,7 +73,7 @@ class App extends Component  {
 
       </div>
 
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="category-title">
           <h2>Me contacter</h2>
         </div>

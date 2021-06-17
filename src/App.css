@@ -68,6 +68,7 @@ button :hover{
   font-size: 1.5em;
   text-align: center;
   margin-top: 80px;
+  padding-top: 10px
 }
 
 .cloud{
@@ -77,4 +78,9 @@ margin: 80px 200px 0px 200px;
 .container{
   display: flex;
   justify-content: center;
+}
+
+.porfolio {
+  background-color: #6860C7;
+  padding-bottom: 50px;
 }
