@@ -7,6 +7,7 @@ import Primary from './components/primary/primary.components';
 
 ReactDOM.render(
   <React.StrictMode>
+    <head><script src="https://kit.fontawesome.com/b5469fb752.js" crossorigin="anonymous"></script></head>
     <div className ='banner'>
       <Primary />
       <App />

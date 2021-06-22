@@ -1,27 +1,28 @@
+.App{
+  /* width: 100%; */
+}
 
-.Banner{
+.Banner {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.Banner h2{
+.Banner h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: right;
   font-size: 4.5em;
   line-height: 1.5em;
-
 }
 
-.Infos{
+.Infos {
   display: flex;
   justify-content: right;
   flex-direction: column;
 }
 
-button{
+button {
   font-size: 40px;
   font-family: arial;
   font-weight: bold;
@@ -32,55 +33,159 @@ button{
   text-align: right;
 }
 
-button :hover{
+button :hover {
   text-decoration: underline;
 }
 
-.specifications{
-  display: flex;
-  justify-content: space-between;
-  margin: 300px 200px 0px 200px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color:rgb(70, 70, 70);
+.web {
+  grid-area: web;
 }
 
-.specifications h3{
+.dev {
+  grid-area: dev;
+  
+}
+
+.design {
+  grid-area: design;
+}
+
+.spec-bg{
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+
+
+}
+
+.description{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.description h2{
+  font-size: 2.5rem;
+  color: #524ba5;
+}
+
+.description p {
+  font-size: 1.25rem;
+  line-height: 1.70rem;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.specifications {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  grid-gap: 1em;
+  grid-template-areas: "web" "dev" "design";
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgb(70, 70, 70);
+}
+
+@media only screen and (min-width: 1100px) {
+  .specifications {
+    justify-content: start;
+    justify-items: end;
+    align-content: space-evenly;
+    align-items: start;
+    grid-template-areas: "web dev design";
+    max-width: 2800px;
+  }
+  .web {
+    border-right: 1px solid #E6ECF8;
+  }
+  .dev {
+    border-right: 1px solid #E6ECF8;
+  }
+  .spec-bg{
+  margin: 100px;
+  }
+  .description p{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.specifications h3 {
   font-size: 28px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
+  padding: 50px;
   text-align: center;
 }
 
-.image{
-  height: 250px;
-  width: auto;
+
+.image {
+  height: 200px;
 }
 
-.category-title{
-  color:white;
+.category-title {
+  color: #6760C7;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 70px;
   padding-top: 10px
 }
 
-.cloud{
-margin: 80px 200px 0px 200px;
-}
-
-.container{
+.container {
   display: flex;
   justify-content: center;
 }
 
-.porfolio {
-  background-color: #6860C7;
-  padding-bottom: 50px;
+
+/* CONTACT  */
+
+.contact{
+  background-color: #252150;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70vw;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+  padding: 40px 25px;
+  
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2em;
+}
+
+.contact a{
+  border: solid 2px #5C54BF;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+.contact a:hover{
+background-color: #5C54BF;
 }

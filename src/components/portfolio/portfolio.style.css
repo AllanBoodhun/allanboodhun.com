@@ -1,0 +1,35 @@
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #5C54BF;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5C54BF;
+}
+
+button img{
+ margin-right: 20px; 
+}
+
+
+button:hover{
+  background-color: #5C54BF;
+    border: none;
+  color: white;
+   padding: 12px 25px;
+}
+
+
+.link-dribble{
+  margin-top: 75px;
+  display:flex;
+  justify-content: center;
+}
+
+.Container-all{
+  /* height: 650px; */
+  min-height: 550px;
+}

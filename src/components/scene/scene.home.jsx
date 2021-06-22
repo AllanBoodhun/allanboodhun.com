@@ -23,6 +23,13 @@ export default function Scene() {
   return (
     <div className="Scene">
       <Canvas camera={{ position: [-10, -15, 65], fov: 50 }} dpr={[1, 2]}>
+        <Html position={[0, -25 , 0]}> 
+          <div className="overlay">
+          <h2 className="title" >
+            <span>Développeur / Graphiste</span>
+          </h2>
+            </div>
+        </Html>
         <pointLight position={[100, 100, 100]} intensity={0.52} />
         <hemisphereLight color="#ffffff" groundColor="#b9b9b9" position={[-7, 25, 13]} intensity={0.5} />
         <Suspense fallback={null}>
@@ -42,14 +49,7 @@ export default function Scene() {
           </group>
         </Suspense>
       </Canvas>
-      <div className="overlay">
-
-        <h2 className="title" >
-          <span>Développeur</span> 
-          <br />
-          <span>Graphiste</span>
-        </h2>
-      </div>
+      
     </div>
   );
 }

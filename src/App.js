@@ -4,84 +4,93 @@ import Scene from './components/scene/scene.home'
 import web_design from '../src/web_design.png';
 import dev from '../src/dev.png';
 import print from '../src/print.png';
-import WordCloud from './components/wordcloud/wordcloud.component'
-import CardList from './components/card-list/card-list.component';
 import WORKS from './components/portfolio/works';
-import Search from './components/checkbox/checkbox.component';
+import Porfolio from './components/portfolio/portfolio.components';
+import Footer from './components/footer/footer.component';
 
 
 
 
 
-class App extends Component  {
+
+class App extends Component {
 
   constructor() {
     super();
 
     this.state = {
-      works: WORKS, 
+      works: WORKS,
       checked: false,
     };
   }
 
-  // componentDidMount() {
-  //   this.setState({ works:  });
-  //   // this.setState remplace le contenu de this.state
-  // }
-  render(){
+  render() {
     const works = this.state.works;
-  
-
-  return (
-    <div className="App">
-
-      
-      <Scene />
-
-      <div className="specifications" id="about">
-        <div className="card">
-          <img className="image" src={web_design} alt="web design" />
-          <h3>Web Design</h3>
-          <p>Je fais du webdesign et j'aime taper du texte juste pour voir la place que ça prend :)</p>
-        </div>
-        <div className="card">
-          <img className="image" src={dev} alt="web design" />
-          <h3>Développement</h3>
-          <p>Je fais du dev, t'as vu. J'ai une formation React et tout et tout avec Rails TMTC</p>
-        </div>
-        <div className="card">
-          <img className="image" src={print} alt="web design" />
-          <h3>Charte Graphique</h3>
-          <p>Mais à la base je suis graphiste donc je sais faire des trucs joli tkt ++</p>
-        </div>
+    return (
+      <div className="App">
+        < Scene />
+      <div className="description">
+        <h2>Salut!</h2>
+          <p>Je suis Graphiste et Develloppeur web freelance avec près de 10 ans d'expérience dans le milieu du web. 
+            D'un naturel curieux, je travaille sans cesse à améliorer mes compétences, un problème de conception à la fois.</p>
       </div>
-
-      <div className="cloud">
-        <WordCloud />
+      <div className="specifications spec-bg" id="about">
+        <div className="card web">
+          <img className="image" src={web_design} alt="web design"/>
+          <h3> Web Design </h3> 
+          <p> Je fais du webdesign et j'aime taper du texte juste pour voir la place que ça prend :)</p>
+          <h4>Ce que je peux faire pour vous</h4>
+          <p>UX/UI, Web, Mobile</p>
+          <h4>Avec les outils</h4>
+          <ul> 
+              <li>Figma</li>
+              <li>Adobe XD</li>
+          </ul>
+        </div> 
+        <div className="card dev">
+          <img className="image" src={dev} alt="développeur"/>
+          <h3> Développement </h3> 
+          <p> Je fais du dev, t 'as vu. J'ai une formation React et tout et tout avec Rails TMTC </p>
+            <h4>Les langages que je parle</h4>
+            <p>HTML, CSS, Sass, JavaScript, Ruby, C#</p>
+            <h4>Sur les Frameworks</h4>
+            <ul>
+              <li>React</li>
+              <li>Rails</li>
+            </ul>
+        </div> 
+        <div className="card design">
+          <img className="image" src={print}  alt="Charte Graphique" />
+          <h3> Charte Graphique </h3> 
+          <p> Mais à la base je suis graphiste donc je sais faire des trucs joli tkt++ </p>
+            <h4>Ce que je peux faire pour vous</h4>
+            <p>Logos, identitées visuelles, brochures, catalogues, illustrations</p>
+            <h4>Avec les outils</h4>
+            <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InDesign</li>
+              <li>Papier / Crayon</li>
+            </ul>
+        </div> 
       </div>
 
       <div className="porfolio" id="portfolio">
-        <div className="category-title">
-          <h2>Porfolio</h2>
-        </div>
-        <div className="input-container">
-      
-        </div>
-        <div className="container">
-          <CardList works={works} />
-        </div>
-
+       <Porfolio/>
       </div>
 
-      <div className="contact" id="contact">
-        <div className="category-title">
-          <h2>Me contacter</h2>
-        </div>
+        <div className="contact" id="contact">
+          <div className="content">
+            <h2>Pour commencer <br/>à travailler ensemble </h2>
+            <p> N'hésitez pas à m'envoyer un mail et je vous recontacterai rapidement pour discuter de votre projet </p>
+            <a href="mailto:allan.boodhun@gmail.com">Envoyer un mail</a>
+          </div>
+        </div> 
 
+        <Footer />
       </div>
-    </div>
-  );
-}
+    );
+    }
 }
 
 export default App;

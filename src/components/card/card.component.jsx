@@ -4,10 +4,12 @@ import './card.style.css';
 
 const Card = props => (
   <div className='card-container'>
-   
-    {props.work.image}
-    <h2> {props.work.title} </h2>
-    <p>{props.work.url}</p>
+    <div className='media'>{props.work.image}</div>
+    <div className="show">
+      <h3> {props.work.title} </h3>
+      <p>{props.work.description}</p>
+      {props.work.url}
+    </div>
   </div>);
 
 export default Card;
