@@ -5,7 +5,7 @@ import './loading.style.css';
 const Loading = () => (
   <div className='loading'>
     <ReactLoading 
-      type='balls'
+      type='SpinningBubbles'
       color='#ffffff'
     />
   </div>

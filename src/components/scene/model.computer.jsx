@@ -3,6 +3,7 @@ import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useFrame } from '@react-three/fiber'
 
+
 const Computer = () => {
   const gltf = useLoader(GLTFLoader, "./interface.gltf");
   const dino = useLoader(GLTFLoader, "./dino.gltf");

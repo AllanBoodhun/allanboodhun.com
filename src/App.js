@@ -11,24 +11,23 @@ import Loading from './components/loading/loading.component';
 
 
 class App extends Component {
+
   state = {
-    loading: true
+    Loading: true
   }
 
   componentWillMount () {
-      setTimeout(() => {
-        this.setState({
-          loading: false
-        })
-      }, 3000);
+    console.log('i will');
+    this.setState({
+      loading: false
+    });
     }
 
   render() {
-    if (this.state.loading) {
+    if (this.state.loading){
       return (
       <Loading />)
     }
-
     return (
       <div className="App">
         < Scene />
