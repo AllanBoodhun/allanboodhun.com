@@ -4,20 +4,31 @@ import Scene from './components/scene/scene.home'
 import web_design from '../src/web_design.png';
 import dev from '../src/dev.png';
 import print from '../src/print.png';
-import WORKS from './components/portfolio/works';
 import Porfolio from './components/portfolio/portfolio.components';
 import Footer from './components/footer/footer.component';
+import Loading from './components/loading/loading.component';
 
 
 
 class App extends Component {
-
-  constructor() {
-    super();
+  state = {
+    loading: true
   }
 
+  componentWillMount () {
+      setTimeout(() => {
+        this.setState({
+          loading: false
+        })
+      }, 3000);
+    }
+
   render() {
-  
+    if (this.state.loading) {
+      return (
+      <Loading />)
+    }
+
     return (
       <div className="App">
         < Scene />
