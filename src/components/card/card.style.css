@@ -23,8 +23,7 @@
   top: 0px;
   height: 99%;
   width: 100%;
- 
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .card-container .show h3{
@@ -35,6 +34,7 @@
 .card-container .show p{
   text-align: center;
   font-size: 15px;
+  max-width: 300px;
 }
 
 .card-container .show a{

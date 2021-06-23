@@ -22,48 +22,53 @@ class App extends Component {
       <div className="App">
         < Scene />
       <div className="description">
-        <h2>Salut!</h2>
-          <p>Je suis Graphiste et Develloppeur web freelance avec près de 10 ans d'expérience dans le milieu du web. 
-            D'un naturel curieux, je travaille sans cesse à améliorer mes compétences, un problème de conception à la fois.</p>
+        <h2>Bonjour à tous!</h2>
+          <p>Je suis graphiste et développeur web freelance avec près de 10 ans d'expérience dans le milieu du web. 
+            D'un naturel curieux, je travaille sans cesse à améliorer mes compétences et découvrir de nouveaux outils.
+            <br/> N'hésitez pas à parcourir mon site pour mieux me connaitre et à me contacter !</p>
       </div>
       <div className="specifications spec-bg" id="about">
         <div className="card web">
           <img className="image" src={web_design} alt="web design"/>
           <h3> Web Design </h3> 
-          <p> Je fais du webdesign et j'aime taper du texte juste pour voir la place que ça prend :)</p>
+          <p>En plus de la conception de l'achitecture de votre site, je peux aussi optimiser son ergonomie ainsi que son interface visuelle.</p>
           <h4>Ce que je peux faire pour vous</h4>
-          <p>UX/UI, Web, Mobile</p>
+          <p>UX/UI Design, Site Web et Application Mobile</p>
           <h4>Avec les outils</h4>
-          <ul> 
-              <li>Figma</li>
-              <li>Adobe XD</li>
-          </ul>
+            <p> Figma
+              <br />
+              Adobe XD
+            </p>
         </div> 
         <div className="card dev">
           <img className="image" src={dev} alt="développeur"/>
-          <h3> Développement </h3> 
-          <p> Je fais du dev, t 'as vu. J'ai une formation React et tout et tout avec Rails TMTC </p>
+          <h3> Développement Web</h3> 
+          <p> Une fois votre design défini, je peux m'occuper de toute la partie développement, ma spécialité étant le côté front-end, c'est à dire la partie visuelle de votre site.</p>
             <h4>Les langages que je parle</h4>
             <p>HTML, CSS, Sass, JavaScript, Ruby, C#</p>
             <h4>Sur les Frameworks</h4>
-            <ul>
-              <li>React</li>
-              <li>Rails</li>
-            </ul>
+            <p> React 
+              <br/>
+              Rails
+            </p>
         </div> 
         <div className="card design">
           <img className="image" src={print}  alt="Charte Graphique" />
           <h3> Charte Graphique </h3> 
-          <p> Mais à la base je suis graphiste donc je sais faire des trucs joli tkt++ </p>
+          <p> Graphiste de formation, je peux également donner une image à votre projet en respectant vos valeurs et vos envies.</p>
             <h4>Ce que je peux faire pour vous</h4>
-            <p>Logos, identitées visuelles, brochures, catalogues, illustrations</p>
+            <p>Logos, identités visuelles, brochures, catalogues, illustrations</p>
             <h4>Avec les outils</h4>
-            <ul>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>InDesign</li>
-              <li>Papier / Crayon</li>
-            </ul>
+            <p> Photoshop
+              <br />
+              Illustrator
+              <br />
+              InDesign
+              <br />
+              Blender
+              <br />
+              Papier / Crayon
+            </p>
         </div> 
       </div>
 
@@ -73,7 +78,7 @@ class App extends Component {
 
         <div className="contact" id="contact">
           <div className="content">
-            <h2>Pour commencer <br/>à travailler ensemble </h2>
+            <h2>Commençons à travailler ensemble ! </h2>
             <p> N'hésitez pas à m'envoyer un mail et je vous recontacterai rapidement pour discuter de votre projet </p>
             <a href="mailto:allan.boodhun@gmail.com">Envoyer un mail</a>
           </div>
