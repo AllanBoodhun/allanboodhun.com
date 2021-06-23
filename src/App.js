@@ -10,22 +10,14 @@ import Footer from './components/footer/footer.component';
 
 
 
-
-
-
 class App extends Component {
 
   constructor() {
     super();
-
-    this.state = {
-      works: WORKS,
-      checked: false,
-    };
   }
 
   render() {
-    const works = this.state.works;
+  
     return (
       <div className="App">
         < Scene />
