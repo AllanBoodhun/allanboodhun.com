@@ -17,7 +17,7 @@
   border-radius: 15px;
   visibility: hidden;
   z-index: 999;
-  background-color: rgba(0, 2, 32, 0.856);
+  background-color: rgb(0, 2, 32);
   color: white;
   position: absolute;
   top: 0px;
