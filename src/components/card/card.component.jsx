@@ -8,7 +8,8 @@ const Card = props => (
     <div className="show">
       <h3> {props.work.title} </h3>
       <p>{props.work.description}</p>
-      {props.work.url}
+      <a href={`/projects/${props.work.id}`}>Voir le projet</a>
+      
     </div>
   </div>);
 

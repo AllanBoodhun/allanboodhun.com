@@ -6,6 +6,7 @@ import print from '../../../src/print.png';
 import Porfolio from '../../components/portfolio/portfolio.components';
 import Footer from '../../components/footer/footer.component';
 import Loading from '../../components/loading/loading.component';
+import Primary from '../../components/primary/primary.components';
 
 import './homepage.style.css';
 
@@ -30,6 +31,7 @@ class HomePage extends Component {
     }
     return (
       <div className="Homepage">
+        <Primary />
         < Scene />
         <div className="description">
           <h2>Salut ! 👋</h2>

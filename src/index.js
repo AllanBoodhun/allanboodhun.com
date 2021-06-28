@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Primary from './components/primary/primary.components';
 import { BrowserRouter } from 'react-router-dom';
 
 // ReactDOM.render(
@@ -18,7 +17,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Primary />
     <App />
   </BrowserRouter>,
   document.getElementById('root')

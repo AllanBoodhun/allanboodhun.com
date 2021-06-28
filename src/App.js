@@ -6,15 +6,23 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import Project from './pages/projects/project.component';
 
-import WORKS from './components/portfolio/works';
 
+const ProjectDetail = props => {
+  return(
+    <div>
+      <h2>Détail du projet {props.match.params.projectId}</h2>
+      <p>{props.match.params.projectId}</p>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/projects' component={Project} />
+        <Route exact path='/projects' component={Project} />
+        <Route exact path='/projects/:projectId' component={ProjectDetail} />
       </Switch>
     </div>
   );
